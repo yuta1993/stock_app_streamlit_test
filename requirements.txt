@@ -2,4 +2,4 @@ pandas
 yfinance
 altair
 streamlit
-matplotlib.pyplot
+matplotlib
