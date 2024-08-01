@@ -2,7 +2,7 @@ import pandas as pd
 import yfinance as yf
 import altair as alt
 import streamlit as st
-import matplotlib.pyplot
+import matplotlib as mp
 
 
 st.title('有名米国株可視化アプリ')
@@ -37,7 +37,7 @@ def get_data(days, tickers):
     for company in tickers.keys():
         tkr = yf.Ticker(tickers[company])
         hist = tkr.history(period=f'{days}d')
-        hist.index = hist.index.strftime('%d %B %Y')
+        # hist.index = hist.index.strftime('%d %B %Y')
         # hist.index = hist.index.to_series().apply(lambda x: x.strftime('%d %B %Y'))
         hist = hist[['Close']]
         hist.columns = [company]
