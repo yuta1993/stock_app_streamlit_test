@@ -3,7 +3,6 @@ import yfinance as yf
 import altair as alt
 import streamlit as st
 
-
 st.title('有名米国株可視化アプリ')
 
 st.sidebar.write("""

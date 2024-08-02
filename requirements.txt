@@ -1,4 +1,4 @@
 pandas==1.4.3 #ダウングレードしないとエラーを起こす。
-yfinance
+yfinance==0.2.33
 altair==5.2.0
 streamlit
